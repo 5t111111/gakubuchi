@@ -3,7 +3,7 @@ module Gakubuchi
     config.assets.configure do |env|
       engine_registrar = EngineRegistrar.new(env)
 
-      engine_registrar.register(:haml, '::Tilt::HamlTemplate')
+      # engine_registrar.register(:haml, '::Tilt::HamlTemplate')
       engine_registrar.register(:slim, '::Slim::Template')
     end
 
